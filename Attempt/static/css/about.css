@@ -1,0 +1,142 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+  }
+
+body{
+    background-color: #d1d8e0;
+}
+
+.Header{
+    width: 100%;
+    height: 100px;
+    background-color: #fd9644;
+
+    display: flex;
+}
+
+.logo{
+    width: 105px;
+    margin-left: 50px;
+}
+
+/* for targeting ids */
+#sidebar{
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background: #778beb;
+    left: -300px;
+    top: 100px;
+    transition: .4s;
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: aliceblue;
+    font-size: 20px;
+    
+    padding: 20px 60px;
+}
+
+#sidebar ul{
+    margin-top: 80px;
+}
+
+#clickable{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+#clickable span{
+    width: 40px;
+    height: 3px;
+    background: brown;
+    display: block;
+    margin-top: 5px;
+}
+
+h1{
+    text-align: left;
+    margin-left: 25vw;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
+
+canvas{
+    position: absolute;
+    margin: auto;
+    top: -20vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#InfoSection{
+    
+    margin: 45vh auto;
+    width: 700px;
+    height: 300px;
+
+    align-items: center;
+    background-color: #4b6584;
+}
+
+.SelectionBar{
+    background-color:#778beb;
+    width: 100%;
+    height: 3rem;
+}
+
+.Selections{
+    width: 60px;
+    height: 100%;
+
+    background-color: aquamarine;
+    border: none;
+    
+
+}
+
+.Selections:hover{
+    background-color: cadetblue;
+}
+
+#SelectionAbout{
+    color: white;
+    font-size: 20px;
+
+    display: flex;
+    text-align: left;
+    margin-left: -4wv ;
+
+    padding: 20px 20px;
+}
+
+#About{
+
+    margin-left: 25vw;
+    background-color: aquamarine;
+    color: black;
+    width: 600px;
+    height: 300px;
+    font-size: 20px;
+    padding: 20px 20px;
+
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+}
