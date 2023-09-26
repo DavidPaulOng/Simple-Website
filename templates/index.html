@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataSCienceWebsiteStatistics</title>
+    <script src = "{{url_for('static',filename= 'js/logic.js')}}" defer></script>
+    <link rel="stylesheet" href="{{url_for('static',filename= 'css/style.css')}}">
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+
+</head>
+<body>
+
+    <div class="Header">
+        <img src="{{url_for('static',filename= 'img/anime-saber.gif')}}" onclick="padorupadoru()" alt="logo" class="logo">
+        <img src="{{url_for('static',filename= 'img/smile.webp')}}" alt="logo" class="logo">
+
+    </div>
+
+
+    <h1>DATA SCIENCE SALARY PREDICTOR</h1>
+    
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+    <div id = "sidebar">
+
+        <ul class= "options">
+            <li><a href="{{url_for('index')}}" style="text-decoration: none;">Home</a></li> 
+           <li><a href="{{url_for('about')}}"style="text-decoration: none;">About DSSP</a></li> 
+           <li><a href="{{url_for('about')}}"style="text-decoration: none;">Why</a></li> 
+        </ul>
+        
+    </div>
+
+    <div onclick="show()" id = "clickable">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id = "InfoSection">
+        <div class="SelectionBar">
+
+            <button class = "Selections" id = "button1">Data1</button><button class = "Selections"id = "button2">Data2</button><button class = "Selections" id = "button3" >Data3</button>
+
+        </div>
+        <div id = "SelectionAbout">This is some placeholder text that will be replaced later. Testing to see what happens if the text overflows</div>
+    </div>
+    
+    
+    
+</body>
+</html>
